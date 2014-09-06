@@ -1,0 +1,252 @@
+body{
+  font-family: 'Raleway', sans-serif;
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,rgba(255,255,255,0.65)), color-stop(100%,rgba(255,255,255,0.65))), url(/img/white_wall.png) repeat 0 0;
+}
+
+header{
+  width: 100%;
+  height: 100px;
+  position: relative;
+  color: white;
+  background-color: black;
+  box-shadow: 0px 5px 10px #bdbdbd;
+  overflow: hidden;
+}
+
+header span{
+  font-weight: 300;
+  color: #29AAE1;
+}
+
+header strong{
+  font-weight: 700;
+  color: white;
+}
+
+header h2{
+  margin: 0 0 0 30px;
+  font-size: 55px;
+}
+
+header ul, aside ul{
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+header ul li{
+  display: inline-block;
+  text-align: center;
+  border-top: 1px dashed white;
+  border-bottom: 1px dashed white;
+  text-transform: uppercase;
+  font-size: 14px;
+  font-weight: 500;
+  width: 205px;
+  padding: 25px 0;
+  margin-right: -105px;
+  -webkit-transform: rotate(45deg);
+}
+
+a{
+  text-decoration: none;
+  color: inherit;
+}
+
+header ul .active{
+  color: #29AAE1;
+  border-top: 1px dashed #29AAE1;
+  border-bottom: 1px dashed #29AAE1;
+}
+
+header ul li:hover{
+  color: #29AAE1;
+  border-top: 1px dashed #29AAE1;
+  border-bottom: 1px dashed #29AAE1;
+  transition: all 0.5s;
+}
+
+/* ASIDE NAV */
+aside ul{
+  list-style: none;
+  margin-top: 50px;
+}
+aside ul li{
+  margin-left: 30px;
+  padding: 10px 0;
+  border-bottom: 1px dashed #29AAE1;
+
+}
+aside ul li a{
+  color: #0f0f0f;
+  text-transform: uppercase;
+  font-weight: 500;
+}
+
+/*============================= ABOUT -- */
+
+
+#about{
+}
+
+#myPicture{
+  width: 220px;
+  height: 220px;
+  border-radius: 150px;
+  -webkit-border-radius: 150px;
+  -moz-border-radius: 150px;
+  box-shadow: 1px 1px 5px rgba(0, 0, 0, .8);
+  -webkit-box-shadow: 1px 1px 5px rgba(0, 0, 0, .8);
+  -moz-box-shadow: 1px 1px 5px rgba(0, 0, 0, .8);
+  background: url(/img/areillyWork.jpg) no-repeat;
+  background-position: center top;
+  margin: 50px 0;
+}
+
+#about p{
+  width: 70%;
+}
+
+/*============================= CONTACT -- */
+#contact h1{
+  font-weight: 700;
+  font-size: 100px;
+  color: #29AAE1;
+  text-shadow: 1px 1px 0px #999;
+  /*text-shadow: 0px 1px 3px #888;*/
+  margin: 50px 0 0 0;
+}
+
+#contact ul{
+  list-style: none;
+  padding: 0;
+}
+#contact ul li{
+  display: inline-block;
+  margin: 0 30px;
+}
+
+
+/*  SECTIONS  */
+.section {
+  clear: both;
+  padding: 0px;
+  margin: 0px;
+}
+
+/*  COLUMN SETUP  */
+.col {
+  display: block;
+  float:left;
+  margin: 1% 0 1% 1%;
+}
+.col:first-child { margin-left: 0; }
+
+
+/*  GROUPING  */
+.group:before,
+.group:after {
+  content:"";
+  display:table;
+}
+.group:after {
+  clear:both;
+}
+.group {
+  zoom:1; /* For IE 6/7 */
+}
+
+/*  GRID OF ELEVEN   ============================================================================= */
+
+.span_11_of_11 {
+  width: 100%;
+}
+
+.span_10_of_11 {
+  width: 90.76%;
+}
+
+.span_9_of_11 {
+  width: 81.52%;
+}
+
+.span_8_of_11 {
+  width: 72.29%;
+}
+
+.span_7_of_11 {
+  width: 63.05%;
+}
+
+.span_6_of_11 {
+  width: 53.81%;
+}
+
+.span_5_of_11 {
+  width: 44.58%;
+}
+
+.span_4_of_11 {
+  width: 35.34%;
+}
+
+.span_3_of_11 {
+  width: 26.1%;
+}
+
+.span_2_of_11 {
+  width: 16.87%;
+}
+
+.span_1_of_11 {
+  width: 7.63%;
+}
+
+
+/*  GO FULL WIDTH AT LESS THAN 480 PIXELS */
+
+@media only screen and (max-width: 480px) {
+  .span_11_of_11 {
+    width: 100%;
+  }
+  .span_10_of_11 {
+    width: 100%;
+  }
+  .span_9_of_11 {
+    width: 100%;
+  }
+  .span_8_of_11 {
+    width: 100%;
+  }
+  .span_7_of_11 {
+    width: 100%;
+  }
+  .span_6_of_11 {
+    width: 100%;
+  }
+  .span_5_of_11 {
+    width: 100%;
+  }
+  .span_4_of_11 {
+    width: 100%;
+  }
+  .span_3_of_11 {
+    width: 100%;
+  }
+  .span_2_of_11 {
+    width: 100%;
+  }
+  .span_1_of_11 {
+    width: 100%;
+  }
+}
+
+footer{
+  background-color: black;
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  font-size: 12px;
+  color: white;
+  text-align: center;
+}
