@@ -8,3 +8,7 @@ gem 'sinatra-contrib'
 gem 'rake'
 
 gem 'shotgun'
+
+gem 'mail', '~> 2.6.1'
+
+gem 'pry'

@@ -50,6 +50,7 @@ header ul li{
 
 a{
   text-decoration: none;
+  cursor: pointer;
   color: inherit;
 }
 
@@ -109,12 +110,12 @@ aside ul li a{
 
 /*============================= CONTACT -- */
 #contact h1{
-  font-weight: 700;
+  font-weight: 400;
   font-size: 100px;
-  color: #29AAE1;
+  color: #757575;
   text-shadow: 1px 1px 0px #999;
-  /*text-shadow: 0px 1px 3px #888;*/
-  margin: 50px 0 0 0;
+  text-shadow: 0px 1px 3px #888;
+  margin: 60px 0 0 0;
 }
 
 #contact ul{
@@ -126,6 +127,16 @@ aside ul li a{
   margin: 0 30px;
 }
 
+#contact ul li a i{
+  color: #29AAE1;
+}
+
+#contact .emailForm{
+  width: 60%;
+  height: auto;
+  border: 2px dotted #29AAE1;
+  display: none;
+}
 
 /*  SECTIONS  */
 .section {
