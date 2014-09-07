@@ -30,7 +30,7 @@ header h2{
 
 header nav{
   position: absolute;
-  right: 130px;
+  right: 150px;
   top: 2px;
 }
 
@@ -138,12 +138,31 @@ aside ul li a{
 }
 
 #contact .emailForm{
-  width: 60%;
+  width: 30%;
   height: auto;
+  background-color: rgba(0,0,0,0.8);
   border: 2px dotted #29AAE1;
   display: none;
+  position: relative;
+  top: -30vh;
+  color: white;
 }
 
+#contact .emailForm #closeForm{
+  cursor: pointer;
+position: absolute;
+top: 0;
+right: 5px;
+}
+
+#contact .emailForm form{
+  padding: 20px;
+}
+
+#contact .emailForm input, textarea{
+  margin: 5px 0;
+  width: 90%;
+}
 /*  SECTIONS  */
 .section {
   clear: both;
