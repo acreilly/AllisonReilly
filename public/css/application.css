@@ -28,6 +28,12 @@ header h2{
   font-size: 55px;
 }
 
+header nav{
+  position: absolute;
+  right: 130px;
+  top: 2px;
+}
+
 header ul, aside ul{
   list-style: none;
   margin: 0;
