@@ -13,7 +13,7 @@ header{
   overflow: hidden;
 }
 
-header span{
+header span, #index span{
   font-weight: 300;
   color: #29AAE1;
 }
@@ -21,6 +21,14 @@ header span{
 header strong{
   font-weight: 700;
   color: white;
+}
+#index strong{
+  font-weight: 700;
+  color:black;
+}
+
+#index h2{
+  font-size: 130pt;
 }
 
 header h2{
@@ -178,6 +186,44 @@ aside ul li a{
   margin: 5px 0;
   width: 90%;
 }
+
+
+#portfolio .imageThumb{
+width: 200px;
+height: 200px;
+overflow: hidden;
+}
+#portfolio .main{
+  height: 85vh;
+  overflow: scroll;
+  margin: 0;
+}
+#portfolio .main li{
+  display: inline-block;
+  padding: 2px;
+}
+
+#portfolio .imageThumb img{
+  width: 300px;
+  height: auto;
+}
+
+#portfolio .imageContainer{
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 5;
+  width: 100vw;
+  height: 100vh;
+  background-color: rgba(0,0,0,0.8);
+  display: none;
+}
+
+#portfolio #singleImage{
+  margin: 2% 0;
+  height: 95vh;
+}
+
 /*  SECTIONS  */
 .section {
   clear: both;

@@ -1,0 +1,27 @@
+<div id="portfolio">
+  <aside class="col span_3_of_11">
+    <ul>
+      <li><a href="">Web Development</a></li>
+      <li><a href="">Design</a></li>
+      <li><a href="">Photography</a></li>
+    </ul>
+  </aside>
+  <div class="col span_8_of_11 main">
+    <ul>
+      <% @photography.each do |image| %>
+      <li>
+        <figure class="imageThumb">
+          <img src="/img/<%= image.filename %>.png" alt="<%= image.filename %>"/>
+        </figure>
+      </li>
+      <% end %>
+    </ul>
+  </div>
+  <div class="imageContainer">
+    <figure class="fullImage">
+      <center>
+        <img src="" alt="" id="singleImage" />
+      </center>
+    </figure>
+  </div>
+</div>
