@@ -19,7 +19,7 @@ post '/email' do
     authentication: "plain",
     :enable_starttls_auto => true
   }
-
+binding.pry
     email = Mail.new
     email.from = params[:email]
     email.to = "acreilly3@gmail.com"
