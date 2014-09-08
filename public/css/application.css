@@ -187,12 +187,6 @@ aside ul li a{
   width: 90%;
 }
 
-
-#portfolio .imageThumb{
-width: 200px;
-height: 200px;
-overflow: hidden;
-}
 #portfolio .main{
   height: 85vh;
   overflow: scroll;
@@ -203,9 +197,18 @@ overflow: hidden;
   padding: 2px;
 }
 
-#portfolio .imageThumb img{
+#portfolio li .imageThumb{
+width: 200px;
+height: 200px;
+overflow: hidden;
+}
+
+#portfolio li .imageThumb img{
   width: 300px;
   height: auto;
+  position: relative;
+  right: 25%;
+  cursor: pointer;
 }
 
 #portfolio .imageContainer{
