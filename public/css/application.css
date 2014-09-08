@@ -137,7 +137,7 @@ aside ul li a{
 }
 #contact ul li{
   display: inline-block;
-  margin: 0 30px;
+  margin: 0 35px;
   text-shadow: 1px 1px 2px rgba(225, 230, 234, 0.7), 0 0 0 rgba(0, 0, 0, 0.7), -1px -2px 4px rgba(225, 230, 234, 0.7);
   /*color: #757575;*/
   color: rgba(121, 142, 152, 0.7);
@@ -147,6 +147,9 @@ aside ul li a{
   transition: all 0.5s;
   color: rgba(41, 170, 225, 0.7);
 }
+#contact .emailForm h3{
+  color: white;
+}
 
 #contact .emailForm{
   width: 30%;
@@ -155,8 +158,8 @@ aside ul li a{
   border: 2px dotted #29AAE1;
   display: none;
   position: relative;
-  top: -30vh;
-  color: white;
+  top: -40vh;
+  color: black;
 }
 
 #contact .emailForm #closeForm{
@@ -164,6 +167,7 @@ aside ul li a{
   position: absolute;
   top: 0;
   right: 5px;
+  color: white;
 }
 
 #contact .emailForm form{
