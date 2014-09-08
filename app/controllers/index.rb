@@ -29,6 +29,8 @@ post '/email' do
 
     if email.deliver!
     redirect "/contact"
+  else
+redirect '/'
   end
 end
 
