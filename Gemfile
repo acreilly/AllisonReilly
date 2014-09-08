@@ -15,12 +15,15 @@ gem 'thin'
 gem 'activesupport'
 gem 'activerecord'
 
-#face recognition
-
-
 gem 'rake'
 
 gem 'shotgun'
+
+
+gem 'mail', '~> 2.6.1'
+gem 'dotenv'
+gem 'dotenv-deployment'
+gem 'pry'
 
 group :test do
   gem 'shoulda-matchers'
@@ -35,11 +38,3 @@ group :test, :development do
   gem 'faker'
 end
 
-
-
-
-
-gem 'mail', '~> 2.6.1'
-gem 'dotenv'
-gem 'dotenv-deployment'
-gem 'pry'
