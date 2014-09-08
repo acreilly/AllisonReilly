@@ -39,8 +39,8 @@ end
 
 get '/portfolio' do
   @images = Image.all
-  @web_development = Image.where(category: "development")
-  @design = Image.where(category: "design")
+  @dev = Image.where(category: "dev")
+  @design = Image.where(category: "design").reverse
   @photography = Image.where(category: "photography")
   erb :portfolio
 end
