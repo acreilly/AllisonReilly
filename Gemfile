@@ -10,5 +10,6 @@ gem 'rake'
 gem 'shotgun'
 
 gem 'mail', '~> 2.6.1'
-
+gem 'dotenv'
+gem 'dotenv-deployment'
 gem 'pry'
