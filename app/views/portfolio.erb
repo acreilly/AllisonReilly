@@ -8,10 +8,10 @@
   </aside>
   <div class="col span_8_of_11 main">
     <ul>
-      <% @photography.each do |image| %>
+      <% @design.each do |image| %>
       <li>
         <figure class="imageThumb">
-          <img src="/img/<%= image.filename %>.png" alt="<%= image.filename %>"/>
+          <img src="/img/<%= image.filename %>" alt="<%= image.filename %>"/>
         </figure>
       </li>
       <% end %>

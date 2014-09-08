@@ -199,9 +199,9 @@ aside ul li a{
 }
 
 #portfolio li .imageThumb{
-width: 200px;
-height: 200px;
-overflow: hidden;
+  width: 200px;
+  height: 200px;
+  overflow: hidden;
 }
 
 #portfolio li .imageThumb img{
