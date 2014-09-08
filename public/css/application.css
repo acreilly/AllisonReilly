@@ -129,13 +129,14 @@ aside ul li a{
 #contact{
   position: relative;
   top: 20vh;
-  color: rgba(41, 170, 225, 0.7);
+  color: rgba(41, 170, 225, 1);
 }
 
 #contact h1{
   font-weight: 500;
   font-size: 100px;
-  /*text-shadow: 0px 1px 3px #888;*/
+  text-transform: uppercase;
+  text-shadow: 0px 1px 1px #888;
   margin: 0;
 }
 
