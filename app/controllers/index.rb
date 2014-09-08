@@ -14,8 +14,8 @@ post '/email' do
   options = {
     address: "smtp.gmail.com",
     port: '587',
-    user_name: "#{ENV['GMAIL']}",
-    password: "#{ENV['PASSWORD']}",
+    user_name: ENV['GMAIL'],
+    password: ENV['PASSWORD'],
     authentication: "plain",
     :enable_starttls_auto => true
   }
