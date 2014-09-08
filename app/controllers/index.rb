@@ -13,7 +13,7 @@ end
 post '/email' do
   options = {
     address: "smtp.gmail.com",
-    port: '587',
+    port: 587,
     user_name: ENV['GMAIL'],
     password: ENV['PASSWORD'],
     authentication: "plain",
