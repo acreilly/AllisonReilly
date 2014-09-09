@@ -1,21 +1,21 @@
 <div id="portfolio">
   <aside class="col span_3_of_11">
     <ul>
-      <li><a href="">Web Development</a></li>
-      <li><a href="">Design</a></li>
-      <li><a href="">Photography</a></li>
+      <li><a id="dev" href="/portfolio/dev">Web Development</a></li>
+      <li><a id="design">Design</a></li>
+      <li><a id="photography">Photography</a></li>
     </ul>
   </aside>
   <div class="col span_8_of_11 main">
-    <ul>
-      <% @design.each do |image| %>
-      <li>
-        <figure class="imageThumb">
-          <img src="/img/<%= image.filename %>" alt="<%= image.filename %>"/>
-        </figure>
-      </li>
-      <% end %>
-    </ul>
+<ul>
+  <% @images.each do |image| %>
+  <li>
+    <figure class="imageThumb">
+      <img src="/img/<%= image.filename %>" alt="<%= image.filename %>"/>
+    </figure>
+  </li>
+  <% end %>
+</ul>
   </div>
   <div class="imageContainer">
     <figure class="fullImage">

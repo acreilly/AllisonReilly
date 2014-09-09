@@ -1,0 +1,9 @@
+<ul>
+  <% @photography.each do |image| %>
+  <li>
+    <figure class="imageThumb">
+      <img src="/img/<%= image.filename %>" alt="<%= image.filename %>"/>
+    </figure>
+  </li>
+  <% end %>
+</ul>
