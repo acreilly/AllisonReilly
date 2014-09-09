@@ -19,7 +19,7 @@ function PortfolioController(view){
 
 PortfolioController.prototype = {
   initialize: function(){
-    $("img").on("click", this.showImageContainer);
+    $(".main").on("click", "img", this.showImageContainer);
     $(".imageContainer").on("click", this.clearImageContainer);
     $("aside a").on("click", this.navClick)
   },
