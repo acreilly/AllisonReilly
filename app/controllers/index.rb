@@ -16,12 +16,13 @@ end
 post '/email' do
   Mail.defaults do
     delivery_method :smtp, {
-      :address => 'smtp.gmail.com',
-      :port => '587',
-      :user_name => ENV['GMAIL'],
-      :password => ENV['PASSWORD'],
-      :authentication => :plain,
-      :enable_starttls_auto => true
+      address: 'smtp.gmail.com',
+      port: '587',
+      user_name: ENV['GMAIL'],
+      password: ENV['PASSWORD'],
+      domain: 'gmail.com',
+      authentication: :plain,
+      enable_starttls_auto: true
     }
   end
   email = Mail.new
