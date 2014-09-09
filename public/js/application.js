@@ -19,11 +19,21 @@ function PortfolioController(view){
 
 PortfolioController.prototype = {
   initialize: function(){
-    $("img").on("click", this.showImageContainer)
-    $(".imageContainer").on("click", this.clearImageContainer)
+    $("img").on("click", this.showImageContainer);
+    $(".imageContainer").on("click", this.clearImageContainer);
+    $("aside a").on("click", this.navClick)
   },
-  navClick: function(){
-
+  navClick: function(e){
+    e.preventDefault();
+    var navLink = $(this)
+    $.ajax({
+      method: "get",
+      url: "/portfolio/" + navLink.attr("id")
+    }).done(function(){
+      $("aside a").css("color", "black")
+      navLink.css("color", "#29AAE1")
+      $(".main")[0].innerHTML = arguments[0]
+    })
   },
   clearImageContainer: function(){
       $(".imageContainer").css("display", "none");
