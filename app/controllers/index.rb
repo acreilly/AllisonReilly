@@ -15,6 +15,7 @@ post '/email' do
   options = {
     address: "smtp.gmail.com",
     port: 587,
+    domain: "www.allisoncreilly.com",
     user_name: ENV['GMAIL'],
     password: ENV['PASSWORD'],
     authentication: "plain",
