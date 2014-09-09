@@ -9,13 +9,20 @@ header{
   position: relative;
   color: white;
   background-color: black;
-  box-shadow: 0px 5px 10px #bdbdbd;
+  box-shadow: 0px 5px 10px #999;
+  -webkit-box-shadow: 0px 7px 20px 0px rgba(50, 50, 50, 0.36);
+  -moz-box-shadow:    0px 7px 20px 0px rgba(50, 50, 50, 0.36);
+  box-shadow:         0px 7px 20px 0px rgba(50, 50, 50, 0.36);
   overflow: hidden;
+  z-index: 999;
 }
 
-header span, #index span{
+header span{
   font-weight: 300;
   color: #29AAE1;
+}
+#index span{
+  font-weight: 300;
 }
 
 header strong{
@@ -24,11 +31,48 @@ header strong{
 }
 #index strong{
   font-weight: 700;
-  color:black;
 }
 
 #index h2{
-  font-size: 130pt;
+  font-size: 14vw;
+}
+
+#index #slideshow{
+  margin-top: -20px;
+  position: relative;
+  width: 100%;
+  height: 89vh;
+  overflow: hidden;
+}
+
+#index #slideshow > div{
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+#index .name{
+  color: rgba(255,255,255,0.6);
+  z-index: 9999;
+  position: fixed;
+  text-align: center;
+  top: 120px;
+  width: 100%;
+  /*text-shadow: 0px 2px 3px #666;*/
+  /*text-shadow: rgba(0,0,0,0.5) -1px 0, rgba(0,0,0,0.3) 0 -1px, rgba(255,255,255,0.5) 0 1px, rgba(0,0,0,0.3) -1px -2px;*/
+}
+
+#index .name p{
+  font-size: 30px;
+  margin: 0;
+  position: relative;
+  top: -150px;
+}
+
+#index #slideshow img{
+  width: 100vw;
+  height: auto;
+  margin: 0;
 }
 
 header h2{
