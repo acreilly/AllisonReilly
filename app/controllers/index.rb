@@ -30,7 +30,7 @@ post '/email' do
   email.subject = "#{params[:company]} is trying to contact you"
   email.body = "Name:  #{params[:full_name]} \n Company:  #{params[:company]} \n \n #{params[:message]}"
 
-  if email.deliver!
+  if email.deliver
     redirect "/contact"
   else
     redirect '/'
