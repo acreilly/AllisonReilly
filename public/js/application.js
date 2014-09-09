@@ -1,24 +1,23 @@
 $(document).ready(function() {
   $(".emailButton").on("click", function(){
-  $(".emailForm").css("display", "block")
-})
-  $("#closeForm").on("click", function(){
-  $(".emailForm").css("display", "none")
+    $(".emailForm").css("display", "block")
   })
-  portfolioView = new PortfolioView
-  portfolioController = new PortfolioController(portfolioView)
+  $("#closeForm").on("click", function(){
+    $(".emailForm").css("display", "none")
+  })
+  portfolioController = new PortfolioController
   portfolioController.initialize()
 
-$("#slideshow > div:gt(0)").hide();
+  $("#slideshow > div:gt(0)").hide();
 
-setInterval(function() {
-  $('#slideshow > div:first')
+  setInterval(function() {
+    $('#slideshow > div:first')
     .fadeOut(1000)
     .next()
     .fadeIn(1000)
     .end()
     .appendTo('#slideshow');
-},  6000);
+  },  6000);
 
 });
 
@@ -35,17 +34,18 @@ PortfolioController.prototype = {
   },
   navClick: function(e){
     e.preventDefault();
-    var nav
-    var navLink = $(this).attr("id")
+    var navLink = $(this)
     $.ajax({
       method: "get",
-      url: "/portfolio/" + navLink
+      url: "/portfolio/" + navLink.attr("id")
     }).done(function(){
+      $("aside a").css("color", "black")
+      navLink.css("color", "#29AAE1")
       $(".main")[0].innerHTML = arguments[0]
     })
   },
   clearImageContainer: function(){
-      $(".imageContainer").css("display", "none");
+    $(".imageContainer").css("display", "none");
   },
   showImageContainer: function(){
     var imgSrc = $(this).attr("src")
@@ -54,4 +54,3 @@ PortfolioController.prototype = {
   }
 }
 
-function PortfolioView(){}
