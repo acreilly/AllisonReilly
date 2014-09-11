@@ -84,8 +84,8 @@ header h2 {
 
 header nav {
   position: absolute;
-  right: 100px;
-  top: 2px;
+  right: 50px;
+  top: 30px;
 }
 
 header ul, aside ul {
@@ -101,10 +101,8 @@ header ul li {
   font-size: 14px;
   font-weight: 500;
   width: 100px;
-  padding: 25px 0;
+  padding-bottom: 5px;
   margin: 0 25px;
-  border: 1px solid white;
-  border-radius: 20px;
 }
 
 a {
@@ -115,18 +113,20 @@ a {
 
 header ul .active {
   color: #29AAE1;
-  border-bottom: 1px dashed #29AAE1;
+  font-weight: 700;
+}
+
+header ul li:active{
+  color: #29AAE1;
 }
 
 header ul li:hover {
   color: #29AAE1;
-  border-bottom: 1px dashed #29AAE1;
   -moz-transition: all 0.5s;
   -o-transition: all 0.5s;
   -webkit-transition: all 0.5s;
   transition: all 0.5s;
 }
-
 
 
 /*============================= ABOUT -- */
@@ -141,15 +141,20 @@ header ul li:hover {
   -moz-border-radius: 150px;
   -webkit-border-radius: 150px;
   border-radius: 150px;
-  -moz-box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.8);
-  -webkit-box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.8);
-  box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.8);
+  border: 2px solid #999;
   background: url(/img/areillyWork.jpg) no-repeat;
   background-position: center top;
   margin-bottom: 50px;
+  -moz-box-shadow: 0 5px 10px #999;
+  -webkit-box-shadow: 0 5px 10px #999;
+  box-shadow: 0 5px 10px #999;
+  -moz-box-shadow: 0 7px 20px 0 rgba(50, 50, 50, 0.36);
+  -webkit-box-shadow: 0 7px 20px 0 rgba(50, 50, 50, 0.36);
+  box-shadow: 0 7px 20px 0 rgba(50, 50, 50, 0.36);
 }
 
 #about p {
+  font-family: helvetica, arial, sans-serif;
   width: 50%;
   text-align: justify;
 }
