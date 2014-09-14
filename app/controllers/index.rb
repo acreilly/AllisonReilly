@@ -62,3 +62,7 @@ get '/portfolio/photography' do
   @photography = Image.where(category: "photography")
   erb :photography, layout: false
 end
+
+get '/image/:id' do
+  @image = Image.find(params[:id])
+end
