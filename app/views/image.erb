@@ -6,8 +6,14 @@
       <h3><%= @image.title %></h3>
       <% end %>
       <br>
+      <% if @image.dates != nil %>
+      <p><%= @image.dates %></p>
+      <% end %>
       <% if @image.description != nil %>
       <p><b>Description:</b> <%= @image.description %></p>
+      <% end %>
+      <% if @image.technologies != nil %>
+      <p><b>Technologies used:</b> <%= @image.technologies %></p>
       <% end %>
       <% if @image.link != nil %>
       <p><b>Url:</b> <%= @image.link %></p>
