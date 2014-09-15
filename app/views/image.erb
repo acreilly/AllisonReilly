@@ -1,19 +1,21 @@
 <div id="image">
-    <% if @image.title != nil %>
+  <% if @image.title != nil %>
   <aside>
     <div class="content">
       <% if @image.title != nil %>
-      <a target="_blank" href="<%= @image.link %>"><%= @image.title %></a>
+      <h3><%= @image.title %></h3>
+      <% end %>
       <br>
       <% if @image.description != nil %>
-      <p><%= @image.description %></p>
+      <p><b>Description:</b> <%= @image.description %></p>
       <% end %>
+      <% if @image.link != nil %>
       <p><b>Url:</b> <%= @image.link %></p>
       <% end %>
     </div>
   </aside>
-    <% end %>
+  <% end %>
   <center>
-  <img src="/img/<%= @image.filename %>" alt="">
-</center>
+    <img src="/img/<%= @image.filename %>" alt="">
+  </center>
 </div>
