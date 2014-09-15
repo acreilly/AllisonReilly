@@ -16,7 +16,7 @@ end
 
 
 photo_files.each do |photo|
-  Image.create(filename: photo, category: "photography")
+  Image.create(filename: photo, category: "photography", technologies: "Pentax K100D")
 end
 
 design_files.each do |design|
