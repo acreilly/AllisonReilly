@@ -12,10 +12,10 @@
       <p><b>Description:</b> <%= @image.description %></p>
       <% end %>
       <% if @image.technologies != nil %>
-      <p><b>Technologies used:</b> <%= @image.technologies %></p>
+      <b>Technologies used: </b><p><%= @image.technologies %></p>
       <% end %>
       <% if @image.link != nil %>
-      <p><b>Url:</b> <%= @image.link %></p>
+      <b>Url: </b><p style="font-size: 12px;"><%= @image.link %></p>
       <% end %>
     </div>
   </aside>
