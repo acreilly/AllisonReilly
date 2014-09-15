@@ -63,6 +63,7 @@ get '/portfolio/photography' do
   erb :photography, layout: false
 end
 
-get '/image/:id' do
+get '/portfolio/image/:id' do
   @image = Image.find(params[:id])
+  erb :image
 end

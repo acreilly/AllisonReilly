@@ -28,9 +28,10 @@ function PortfolioController(view){
 
 PortfolioController.prototype = {
   initialize: function(){
-    $("img").on("click", this.showImageContainer);
+    $(".imageThumb img").on("click", this.showImageContainer);
     $(".imageContainer").on("click", this.clearImageContainer);
-    $("aside a").on("click", this.navClick)
+    $("aside a").on("click", this.navClick);
+    $(".imageContainer").on("click", "#singleImage", this.imageClick);
   },
   navClick: function(e){
     e.preventDefault();
@@ -44,13 +45,18 @@ PortfolioController.prototype = {
       $(".main")[0].innerHTML = arguments[0]
     })
   },
+  imageClick: function(e){
+    var image = $(this)
+    window.location.replace("/portfolio/image/" + image.attr("alt"))
+  },
   clearImageContainer: function(){
     $(".imageContainer").css("display", "none");
   },
   showImageContainer: function(){
     var imgSrc = $(this).attr("src")
+    var imgID = $(this).attr("alt")
     $(".imageContainer").css("display", "block");
     $("#singleImage").attr("src", imgSrc)
+    $("#singleImage").attr("alt", imgID)
   }
 }
-
