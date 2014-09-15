@@ -302,8 +302,10 @@ aside ul li a {
   color: white;
 }
 
-#image .content h3{
-  color: #29AAE1;
+#image .content h2{
+  color: white;
+  border-bottom: 1px solid #29AAE1;
+  text-align: center;
 }
 #image b{
   color: #29AAE1;
@@ -313,6 +315,10 @@ aside ul li a {
 #image img{
   width: 80%;
   margin-right: 10px;
+}
+
+#image p{
+  font-weight: lighter;
 }
 
 #image a{
