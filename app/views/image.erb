@@ -6,7 +6,7 @@
       <h2><%= @image.title %></h2>
       <% end %>
       <% if @image.dates != nil %>
-      <p><i><%= @image.dates %></i></p>
+      <p style="text-align: center;"><i><%= @image.dates %></i></p>
       <% end %>
       <% if @image.description != nil %>
       <p><b>Description:</b> <%= @image.description %></p>
@@ -15,7 +15,7 @@
       <b>Technologies used: </b><p><%= @image.technologies %></p>
       <% end %>
       <% if @image.link != nil %>
-      <b>Url: </b><p style="font-size: 12px;"><%= @image.link %></p>
+      <b>Url: </b><i><p style="font-size: 12px;"><%= @image.link %></i></p>
       <% end %>
     </div>
   </aside>
