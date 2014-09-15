@@ -1,1 +1,19 @@
-<img src="<%= @image.filename %>" alt="">
+<div id="image">
+    <% if @image.title != nil %>
+  <aside>
+    <div class="content">
+      <% if @image.title != nil %>
+      <a target="_blank" href="<%= @image.link %>"><%= @image.title %></a>
+      <br>
+      <% if @image.description != nil %>
+      <p><%= @image.description %></p>
+      <% end %>
+      <p><b>Url:</b> <%= @image.link %></p>
+      <% end %>
+    </div>
+  </aside>
+    <% end %>
+  <center>
+  <img src="/img/<%= @image.filename %>" alt="">
+</center>
+</div>

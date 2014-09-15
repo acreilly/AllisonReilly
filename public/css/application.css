@@ -289,6 +289,38 @@ aside ul li a {
   height: 95vh
 }
 
+/* ================ IMAGE ==*/
+
+#image{
+  padding-top: 40px;
+  background-color: rgba(0,0,0,0.8);
+  font-family: helvetica, sans-serif;
+}
+
+#image .content{
+  padding: 0 20px;
+  color: white;
+}
+#image img{
+  width: 80%;
+  margin-right: 10px;
+}
+
+#image a{
+  font-weight: 700;
+  font-size: 20px;
+  text-decoration: underline;
+}
+
+#image a:hover{
+  color: #29AAE1;
+}
+
+#image aside{
+  width: 18%;
+  float: left;
+}
+
 /*  SECTIONS  */
 .section {
   clear: both;
