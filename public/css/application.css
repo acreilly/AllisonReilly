@@ -301,6 +301,15 @@ aside ul li a {
   padding: 0 20px;
   color: white;
 }
+
+#image .content h2{
+  color: #29AAE1;
+}
+#image b{
+  color: #29AAE1;
+  text-transform: uppercase;
+}
+
 #image img{
   width: 80%;
   margin-right: 10px;
