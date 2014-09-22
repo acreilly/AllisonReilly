@@ -15,7 +15,7 @@
       <b>Technologies used: </b><p><%= @image.technologies %></p>
       <% end %>
       <% if @image.link != nil %>
-      <b>Url: </b><i><p style="font-size: 12px;"><%= @image.link %></i></p>
+      <b>Url: </b><i><a target="_blank" href="<%= @image.link %>"><%= @image.link %></a></i>
       <% end %>
     </div>
   </aside>
