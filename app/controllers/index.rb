@@ -45,6 +45,11 @@ get '/portfolio' do
   erb :portfolio
 end
 
+get '/portfolio/all' do
+  @images = Image.all.reverse
+  erb :all, layout: false
+end
+
 get '/portfolio/dev' do
   @dev = Image.where(category: "dev")
   erb :dev, layout: false
