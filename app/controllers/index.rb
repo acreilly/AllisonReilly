@@ -1,4 +1,3 @@
-require 'pry'
 require 'net/smtp'
 
 get '/' do

@@ -2,7 +2,7 @@
   <% @photography.each do |image| %>
   <li>
     <figure class="imageThumb">
-      <img src="/img/<%= image.filename %>" alt="<%= image.id %>"/>
+      <img src="/img/thumb/<%= image.filename %>" alt="<%= image.id %>"/>
     </figure>
   </li>
   <% end %>
