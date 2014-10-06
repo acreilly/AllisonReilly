@@ -274,6 +274,7 @@ aside ul li a {
   width: 200px;
   height: 200px;
   overflow: hidden;
+  cursor: pointer;
 }
 
 #portfolio li .imageThumb img {
@@ -281,7 +282,6 @@ aside ul li a {
   height: auto;
   position: relative;
   right: 50%;
-  cursor: pointer;
 }
 
 #portfolio .imageContainer {
@@ -297,7 +297,8 @@ aside ul li a {
 
 #portfolio #singleImage {
   margin: 2% 0;
-  height: 95vh
+  height: 95vh;
+  cursor: pointer;
 }
 
 /* ================ IMAGE ==*/
@@ -306,6 +307,7 @@ aside ul li a {
   padding-top: 40px;
   background-color: rgba(0,0,0,0.8);
   font-family: helvetica, sans-serif;
+  height: 100vh;
 }
 
 #image .content{
@@ -488,20 +490,35 @@ aside ul li a {
     position: relative;
   }
 
-#index #slideshow img {
-  height: 100vh;
-  width: auto;
-  margin: 0;
-  position: absolute;
-  left: -250px;
-}
+  #index #slideshow img {
+    height: 100vh;
+    width: auto;
+    margin: 0;
+    position: absolute;
+    left: -250px;
+  }
 
-.icelandBlackSand, .butterfly{
-  margin-top: 0px;
-}
-.icelandBlackSand{
-  margin-left: -150px;
-}
+  .icelandBlackSand, .butterfly{
+    margin-top: 0px;
+  }
+  .icelandBlackSand{
+    margin-left: -150px;
+  }
+
+  #about p{
+    text-align: left;
+    width: 94%;
+    margin-bottom: 40px;
+  }
+  #portfolio .imageContainer {
+    height: 100%;
+  }
+
+  #portfolio #singleImage {
+    margin-top:30%;
+    width: 95vw;
+    height: auto;
+  }
 
 }
 
