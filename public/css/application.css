@@ -25,7 +25,7 @@ header span {
 }
 
 header h2 {
-  margin: 0 0 0 30px;
+  margin: 15px 0 0 30px;
   font-size: 55px;
 }
 
@@ -37,7 +37,7 @@ header strong {
 header nav {
   position: absolute;
   right: 50px;
-  top: 30px;
+  top: 40px;
 }
 
 header ul, aside ul {
@@ -459,6 +459,17 @@ aside ul li a {
   .span_1_of_11 {
     width: 100%
   }
+  header h2{
+    margin: 0;
+    width: 100%;
+    text-align: center;
+    float: none;
+  }
+  nav ul li{
+    display: block;
+    width: 100%;
+    float: none;
+  }
 }
 
 footer {
@@ -488,14 +499,3 @@ footer {
   }
 }
 
-@media only screen and (min-device-width : 320px) and (max-device-width : 480px) {
-  h2{
-    margin: 0;
-    width: 100%;
-    text-align: center;
-  }
-  nav ul li{
-    display: block;
-    width: 100%;
-  }
-}
