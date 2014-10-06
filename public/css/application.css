@@ -459,17 +459,50 @@ aside ul li a {
   .span_1_of_11 {
     width: 100%
   }
+
+  header{
+    height: 125px;
+  }
   header h2{
     margin: 0;
     width: 100%;
     text-align: center;
     float: none;
   }
-  nav ul li{
-    display: block;
-    width: 100%;
-    float: none;
+  header nav {
+    position: relative;
+    right: 0;
+    top: 0;
+    margin-top: 20px;
   }
+
+  nav ul li{
+    display: inline-block;
+    float: none;
+    margin: 10px 0 10px 2px;
+  }
+  #index .name{
+    display: none;
+  }
+  #index #slideshow{
+    position: relative;
+  }
+
+#index #slideshow img {
+  height: 100vh;
+  width: auto;
+  margin: 0;
+  position: absolute;
+  left: -250px;
+}
+
+.icelandBlackSand, .butterfly{
+  margin-top: 0px;
+}
+.icelandBlackSand{
+  margin-left: -150px;
+}
+
 }
 
 footer {
