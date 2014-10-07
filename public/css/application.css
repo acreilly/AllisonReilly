@@ -302,7 +302,7 @@ aside ul li a {
   width: 100vw;
   height: 100vh;
   background-color: rgba(0, 0, 0, 0.8);
-  display: none
+  display: none;
 }
 
 #portfolio #singleImage {
@@ -322,6 +322,7 @@ aside ul li a {
 
 #image .content{
   padding: 0 20px;
+  margin-bottom: 20px;
   color: white;
 }
 
@@ -333,6 +334,10 @@ aside ul li a {
 #image b{
   color: #29AAE1;
   text-transform: uppercase;
+}
+
+#image .content .back{
+  border-bottom: 1px solid white;
 }
 
 #image img{
@@ -568,7 +573,9 @@ aside ul li a {
   #index #slideshow{
     position: relative;
   }
-
+  aside ul li a{
+    font-size: 20px;
+  }
   #index #slideshow img {
     height: 100vh;
     width: auto;
@@ -591,6 +598,15 @@ aside ul li a {
   }
   #portfolio .main{
     height: 100vh;
+  }
+  #portfolio #singleImage{
+    width: 95vw;
+    height: auto;
+    margin-top: 25vh;
+  }
+  #image img{
+    width: 100vw;
+    height: auto;
   }
   #contact ul{
     margin-top: 100px;
