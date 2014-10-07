@@ -339,9 +339,11 @@ aside ul li a {
 
 #image .content .back{
   font-size: 12px;
-  text-decoration: none;
-  color: white;
   border-bottom: 1px solid white;
+}
+
+#image .content .url{
+  font-size: 10px;
 }
 
 #image img{
@@ -364,9 +366,11 @@ aside ul li a {
 
 #image input[type='submit']{
   background-color: transparent;
+  text-decoration: none;
   border: none;
   color: white;
   padding: 0;
+  cursor: pointer;
 }
 
 #image aside{

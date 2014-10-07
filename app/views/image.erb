@@ -19,7 +19,11 @@
       <b>Technologies used: </b><p><%= @image.technologies %></p>
       <% end %>
       <% if @image.link != nil %>
-      <b>Url: </b><a target="_blank" href="<%= @image.link %>"><%= @image.link %></a>
+      <b>Url: </b>
+      <br>
+        <form action="<%= @image.link %>" method="get">
+          <input type="submit" value="<%= @image.link %>" class="url">
+        </form>
       <% end %>
       <br>
       <br>
