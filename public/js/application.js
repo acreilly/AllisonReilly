@@ -40,7 +40,7 @@ PortfolioController.prototype = {
       method: "get",
       url: "/portfolio/" + navLink.attr("id")
     }).done(function(){
-      $("aside a").css("color", "black")
+      $("aside a").css("color", "black");
       navLink.css("color", "#29AAE1")
       $(".main")[0].innerHTML = arguments[0]
     })
