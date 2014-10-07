@@ -328,6 +328,7 @@ aside ul li a {
 
 #image .content h2{
   color: white;
+  font-size: 22px;
   border-bottom: 1px solid #29AAE1;
   text-align: center;
 }
@@ -337,6 +338,9 @@ aside ul li a {
 }
 
 #image .content .back{
+  font-size: 12px;
+  text-decoration: none;
+  color: white;
   border-bottom: 1px solid white;
 }
 
@@ -354,8 +358,15 @@ aside ul li a {
   text-decoration: none;
 }
 
-#image a:hover{
+#image a:hover, #image .back:hover{
   color: #29AAE1;
+}
+
+#image input[type='submit']{
+  background-color: transparent;
+  border: none;
+  color: white;
+  padding: 0;
 }
 
 #image aside{
@@ -545,9 +556,9 @@ aside ul li a {
   }
 
   #portfolio .main ul li .imageThumb img{
-  width: 275px;
-  height: auto;
-  right: 42%;
+    width: 275px;
+    height: auto;
+    right: 42%;
   }
 
   #portfolio .imageContainer {

@@ -2,7 +2,11 @@
   <% if @image.title != nil %>
   <aside>
     <div class="content">
-      <% if @image.title != nil %>
+      <% if @image.title != nil && @image.link != nil %>
+      <form action="<%= @image.link %>" method="get">
+        <h2><input type="submit" value="<%= @image.title %>"></h2>
+      </form>
+      <% else %>
       <h2><%= @image.title %></h2>
       <% end %>
       <% if @image.dates != nil %>
@@ -19,7 +23,9 @@
       <% end %>
       <br>
       <br>
-      <a href="/portfolio" class="back">Go Back</a>
+      <form action="/portfolio" method="get">
+        <input type="submit" class="back" value="Go Back">
+      </form>
     </div>
   </aside>
   <% end %>
