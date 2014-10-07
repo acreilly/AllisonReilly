@@ -168,6 +168,7 @@ header ul li:hover {
   font-family: helvetica, arial, sans-serif;
   width: 50%;
   text-align: justify;
+  margin-bottom: 40px;
 }
 
 /*============================= CONTACT -- */
@@ -243,7 +244,10 @@ header ul li:hover {
 aside ul {
   margin-top: 20px;
 }
+aside ul li:first-child{
+  border-top: 1px dashed #29AAE1;
 
+}
 aside ul li {
   margin-left: 30px;
   padding: 20px 0 20px 5px;
@@ -262,7 +266,12 @@ aside ul li a {
 #portfolio .main {
   height: 85vh;
   overflow: scroll;
-  margin: 0
+  margin: 0;
+}
+
+#portfolio .main ul{
+  padding-left: 5px;
+  margin-top: 30px;
 }
 
 #portfolio .main li {
