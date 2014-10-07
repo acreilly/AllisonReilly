@@ -519,8 +519,20 @@ aside ul li a {
     width: 94%;
     margin-bottom: 40px;
   }
+  aside ul li:first-child{
+    border-top: none;
+  }
+  aside ul li{
+    border: none;
+    display: inline-block;
+    margin-left: 30px;
+  }
+  aside ul li a{
+    font-size: 18px;
+  }
   #portfolio .main ul{
-    padding-left: 20px;
+    padding-left: 5px;
+    margin-top: 20px;
   }
   #portfolio .main ul li .imageThumb{
     width: 150px;
