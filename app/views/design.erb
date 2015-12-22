@@ -1,6 +1,6 @@
-<ul>
+<ul class='row'>
   <% @design.each do |image| %>
-  <li>
+  <li class='col-lg-3 col-xs-6'>
     <figure class="imageThumb">
       <img src="/img/thumb/<%= image.filename %>" alt="<%= image.id %>"/>
     </figure>

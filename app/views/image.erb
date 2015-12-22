@@ -1,6 +1,6 @@
 <div id="image">
-  <% if @image.title != nil %>
-  <aside>
+  <% if !@image.title.nil? %>
+  <aside class='col-lg-3 col-xs-12 col-sm-12'>
     <div class="content">
       <% if @image.title != nil && @image.link != nil %>
       <form action="<%= @image.link %>" method="get">

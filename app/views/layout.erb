@@ -1,30 +1,44 @@
 <!doctype html>
 <html lang="en">
 <head>
-  <meta name="viewport" content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, width=device-width">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
   <link href='http://fonts.googleapis.com/css?family=Raleway:400,500,700' rel='stylesheet' type='text/css'>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+
   <link rel="stylesheet" href="/css/application.css">
   <link rel="stylesheet" href="/css/normalize.css">
   <script src="//ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
   <script src="/js/application.js"></script>
   <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet">
-
   <link rel="shortcut icon" href="/favicon.ico" type="image/icon"> <link rel="icon" href="/favicon.ico" type="image/icon">
   <title>Allison Reilly</title>
 </head>
 <body>
-  <header class="section group">
-    <h2><a href="/" class="name"><span>allison</span><strong>reilly</strong></a></h2>
-    <nav>
-    <ul>
-        <li><a class="about" href="/about">about</a></li>
-        <li><a  class="portfolio" href="/portfolio">portfolio</a></li>
-        <li><a  class="contact" href="/contact">contact</a></li>
-    </ul>
-    </nav>
-  </header>
-  <div class="body_container section group">
-  <%= yield %>
+  <div class="container-fluid">
+    <header class='row'>
+      <h2 class='col-lg-7 col-sm-12'><a href="/" class="name"><span>allison</span><strong>reilly</strong></a></h2>
+      <nav class='col-lg-5'>
+      <ul class='row'>
+          <li class='col-lg-4 col-sm-12 col-xs-12'><a class="about" href="/about">about</a></li>
+          <li class='col-lg-4 col-sm-12 col-xs-12'><a  class="portfolio" href="/portfolio">portfolio</a></li>
+          <li class='col-lg-4 col-sm-12 col-xs-12'><a  class="contact" href="/contact">contact</a></li>
+      </ul>
+      </nav>
+    </header>
+    <div class="row">
+      <%= yield %>
+    </div>
   </div>
 </body>
 </html>
+
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-54845119-1', 'auto');
+  ga('send', 'pageview');
+
+</script>
