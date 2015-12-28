@@ -331,7 +331,7 @@ aside ul li a {
 }
 
 /* ================ IMAGE ==*/
-#image{
+.image_page {
   padding-top: 40px;
   background-color: rgba(0,0,0,0.8);
   font-family: helvetica, sans-serif;
@@ -364,6 +364,7 @@ aside ul li a {
 }
 
 #image img{
+  width: 100%;
 }
 
 #image p{

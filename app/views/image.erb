@@ -1,39 +1,43 @@
 <div id="image">
   <% if !@image.title.nil? %>
-  <aside class='col-lg-3 col-xs-12 col-sm-12'>
-    <div class="content">
-      <% if @image.title != nil && @image.link != nil %>
-      <form action="<%= @image.link %>" method="get">
-        <h2><input type="submit" value="<%= @image.title %>"></h2>
-      </form>
-      <% else %>
-      <h2><%= @image.title %></h2>
-      <% end %>
-      <% if @image.dates != nil %>
-      <p style="text-align: center;"><i><%= @image.dates %></i></p>
-      <% end %>
-      <% if @image.description != nil %>
-      <p><b>Description:</b> <%= @image.description %></p>
-      <% end %>
-      <% if @image.technologies != nil %>
-      <b>Technologies used: </b><p><%= @image.technologies %></p>
-      <% end %>
-      <% if @image.link != nil %>
-      <b>Url: </b>
-      <br>
+    <aside class='col-lg-3 col-xs-12 col-sm-12'>
+      <div class="content">
+        <% if @image.title != nil && @image.link != nil %>
         <form action="<%= @image.link %>" method="get">
-          <input type="submit" value="<%= @image.link %>" class="url">
+          <h2><input type="submit" value="<%= @image.title %>"></h2>
         </form>
-      <% end %>
-      <br>
-      <br>
-      <form action="/portfolio" method="get">
-        <input type="submit" class="back" value="Go Back">
-      </form>
-    </div>
-  </aside>
+        <% else %>
+        <h2><%= @image.title %></h2>
+        <% end %>
+        <% if @image.dates != nil %>
+        <p style="text-align: center;"><i><%= @image.dates %></i></p>
+        <% end %>
+        <% if @image.description != nil %>
+        <p><b>Description:</b> <%= @image.description %></p>
+        <% end %>
+        <% if @image.technologies != nil %>
+        <b>Technologies used: </b><p><%= @image.technologies %></p>
+        <% end %>
+        <% if @image.link != nil %>
+        <b>Url: </b>
+        <br>
+          <form action="<%= @image.link %>" method="get">
+            <input type="submit" value="<%= @image.link %>" class="url">
+          </form>
+        <% end %>
+        <br>
+        <br>
+        <form action="/portfolio" method="get">
+          <input type="submit" class="back" value="Go Back">
+        </form>
+      </div>
+    </aside>
   <% end %>
-  <center>
+  <% if !@image.title.nil? %>
+    <center class='col-lg-9 col-xs-12 col-sm-12'>
+  <% else %>
+    <center>
+  <% end %>
     <img src="/img/<%= @image.filename %>" alt="">
   </center>
 </div>
