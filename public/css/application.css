@@ -4,10 +4,16 @@ body {
 }
 
 header {
+<<<<<<< HEAD
   /*width: 100%;*/
   /*height: 100px;*/
   /*position: relative;*/
   padding-bottom: 10px;
+=======
+  width: 100%;
+  height: 100px;
+  position: relative;
+>>>>>>> baed3a49e40787b5e5364c8040fbce0ab33d8a8c
   color: white;
   background-color: black;
   -moz-box-shadow: 0 5px 10px #999;
@@ -26,6 +32,7 @@ header span {
 }
 
 header h2 {
+<<<<<<< HEAD
   font-size: 55px;
 }
 
@@ -53,6 +60,24 @@ header strong {
   color: white;
 }
 ul{
+=======
+  margin: 15px 0 0 30px;
+  font-size: 55px;
+}
+
+header strong {
+  font-weight: 700;
+  color: white;
+}
+
+header nav {
+  position: absolute;
+  right: 50px;
+  top: 40px;
+}
+
+header ul, aside ul {
+>>>>>>> baed3a49e40787b5e5364c8040fbce0ab33d8a8c
   list-style: none;
 }
 
@@ -69,6 +94,10 @@ header ul li {
   font-weight: 500;
   width: 100px;
   padding-bottom: 5px;
+<<<<<<< HEAD
+=======
+  margin: 0 25px;
+>>>>>>> baed3a49e40787b5e5364c8040fbce0ab33d8a8c
 }
 
 a {
@@ -77,10 +106,13 @@ a {
   color: inherit;
 }
 
+<<<<<<< HEAD
 a:hover{
   text-decoration: none;
 }
 
+=======
+>>>>>>> baed3a49e40787b5e5364c8040fbce0ab33d8a8c
 header ul .active {
   color: #29AAE1;
   font-weight: 700;
@@ -90,7 +122,11 @@ header ul li:active{
   color: #29AAE1;
 }
 
+<<<<<<< HEAD
 header ul li a:hover {
+=======
+header ul li:hover {
+>>>>>>> baed3a49e40787b5e5364c8040fbce0ab33d8a8c
   color: #29AAE1;
   -moz-transition: all 0.5s;
   -o-transition: all 0.5s;
@@ -116,6 +152,7 @@ header ul li a:hover {
 #index h2 {
   font-size: 14vw;
 }
+<<<<<<< HEAD
 
 #index #slideshow {
   position: relative;
@@ -146,11 +183,44 @@ header ul li a:hover {
   top: -30px;
 }
 
+=======
+
+#index #slideshow {
+  position: relative;
+  width: 100%;
+  height: 89vh;
+  overflow: hidden;
+}
+
+#index #slideshow > div {
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+#index .name {
+  color: rgba(255, 255, 255, 0.6);
+  z-index: 9999;
+  position: fixed;
+  text-align: center;
+  top: 120px;
+  width: 100%;
+}
+
+#index .name p {
+  font-size: 30px;
+  margin: 0;
+  position: relative;
+  top: -150px;
+}
+
+>>>>>>> baed3a49e40787b5e5364c8040fbce0ab33d8a8c
 #index #slideshow img {
   width: 100vw;
   height: auto;
   margin: 0;
 }
+<<<<<<< HEAD
 
 .icelandBlackSand, .butterfly{
   margin-top: -150px;
@@ -164,6 +234,21 @@ header ul li a:hover {
   top: 10vh;
 }
 
+=======
+
+.icelandBlackSand, .butterfly{
+  margin-top: -150px;
+}
+
+
+
+/*============================= ABOUT -- */
+#about {
+  position: relative;
+  top: 10vh;
+}
+
+>>>>>>> baed3a49e40787b5e5364c8040fbce0ab33d8a8c
 #myPicture {
   width: 220px;
   height: 220px;
@@ -260,19 +345,29 @@ header ul li a:hover {
 /* ASIDE NAV */
 aside ul {
   margin-top: 20px;
+<<<<<<< HEAD
   display: block;
   margin-left: 0;
   padding-left: 0;
+=======
+>>>>>>> baed3a49e40787b5e5364c8040fbce0ab33d8a8c
 }
 aside ul li:first-child{
   border-top: 1px dashed #29AAE1;
 
 }
 aside ul li {
+<<<<<<< HEAD
   padding: 20px 0 20px 0px;
   border-bottom: 1px dashed #29AAE1;
   display: block;
   text-align: center;
+=======
+  margin-left: 30px;
+  padding: 20px 0 20px 5px;
+  border-bottom: 1px dashed #29AAE1;
+  display: block;
+>>>>>>> baed3a49e40787b5e5364c8040fbce0ab33d8a8c
 }
 
 aside ul li a {
@@ -301,6 +396,11 @@ aside ul li a {
 }
 
 #portfolio li .imageThumb {
+<<<<<<< HEAD
+=======
+  width: 200px;
+  height: 200px;
+>>>>>>> baed3a49e40787b5e5364c8040fbce0ab33d8a8c
   overflow: hidden;
   cursor: pointer;
   display: block;
@@ -310,7 +410,11 @@ aside ul li a {
   width: 400px;
   height: auto;
   position: relative;
+<<<<<<< HEAD
   right: 35%;
+=======
+  right: 50%;
+>>>>>>> baed3a49e40787b5e5364c8040fbce0ab33d8a8c
 }
 
 #portfolio .imageContainer {
@@ -331,10 +435,19 @@ aside ul li a {
 }
 
 /* ================ IMAGE ==*/
+<<<<<<< HEAD
 .image_page {
   padding-top: 40px;
   background-color: rgba(0,0,0,0.8);
   font-family: helvetica, sans-serif;
+=======
+
+#image{
+  padding-top: 40px;
+  background-color: rgba(0,0,0,0.8);
+  font-family: helvetica, sans-serif;
+  height: 100vh;
+>>>>>>> baed3a49e40787b5e5364c8040fbce0ab33d8a8c
 }
 
 #image .content{
@@ -364,7 +477,12 @@ aside ul li a {
 }
 
 #image img{
+<<<<<<< HEAD
   width: 100%;
+=======
+  width: 80%;
+  margin-right: 10px;
+>>>>>>> baed3a49e40787b5e5364c8040fbce0ab33d8a8c
 }
 
 #image p{
@@ -509,6 +627,10 @@ aside ul li a {
   }
 
   header{
+<<<<<<< HEAD
+=======
+    height: 125px;
+>>>>>>> baed3a49e40787b5e5364c8040fbce0ab33d8a8c
   }
   header h2{
     margin: 10px 0;
@@ -553,6 +675,7 @@ aside ul li a {
     text-align: left;
     width: 94%;
     margin-bottom: 40px;
+<<<<<<< HEAD
   }
   aside ul li:first-child{
     border-top: none;
@@ -560,6 +683,17 @@ aside ul li a {
   aside ul li{
     border: none;
   }
+=======
+  }
+  aside ul li:first-child{
+    border-top: none;
+  }
+  aside ul li{
+    border: none;
+    display: inline-block;
+    margin-left: 30px;
+  }
+>>>>>>> baed3a49e40787b5e5364c8040fbce0ab33d8a8c
   aside ul li a{
     font-size: 18px;
   }
