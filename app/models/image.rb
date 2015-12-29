@@ -13,7 +13,7 @@ class Image < ActiveRecord::Base
           image.title,
           image.filename,
           image.location,
-          image.dates,
+          image.date_created,
           image.technologies,
           image.category,
           image.link,

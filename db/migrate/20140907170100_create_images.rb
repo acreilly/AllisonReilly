@@ -4,7 +4,7 @@ class CreateImages < ActiveRecord::Migration
       t.string :title
       t.string :filename
       t.string :location
-      t.string :dates
+      t.date :date_created
       t.string :technologies
       t.string :category
       t.string :link

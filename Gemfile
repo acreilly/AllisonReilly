@@ -24,6 +24,7 @@ gem 'mail', '~> 2.6.1'
 gem 'dotenv'
 gem 'dotenv-deployment'
 gem 'pry'
+gem 'smarter_csv'
 
 group :test do
   gem 'shoulda-matchers'

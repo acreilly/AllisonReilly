@@ -80,9 +80,3 @@ get '/portfolio/image/:id' do
   @body_class = 'image_page'
   erb :image
 end
-
-require 'csv'
-
-post '/download' do
-  Image.export
-end
