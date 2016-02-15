@@ -650,3 +650,150 @@ footer {
   color: white;
   text-align: center
 }
+
+
+/*wedding*/
+
+.wedding_site {
+  /*font-family: Helvetica, sans-serif;*/
+  font-weight: 400;
+}
+
+#turtle {
+  text-align: center;
+  margin: 20px auto;
+}
+.wedding_site .main-image img {
+  width: 100%;
+  height: auto;
+}
+
+.wedding_site .header {
+  background-color: rgba(250,250,250,1);
+  padding: 15px;
+  margin-bottom: 20px;
+  -webkit-box-shadow: 0 1px 2px rgba(0, 0, 0, 0.17);
+  -moz-box-shadow: 0 1px 2px rgba(0, 0, 0, 0.17);
+  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.17);
+  text-align: center;
+}
+
+.wedding_site h1 {
+  font-family: 'Alex Brush', cursive;
+  font-size: 60px;
+  text-align: center;
+  margin-bottom: 15px;
+}
+
+.wedding_site h1 .small {
+  font-size: 40px;
+}
+
+.wedding_site h2{
+  font-family: 'Open Sans Condensed', sans-serif;
+  text-align: center;
+  color: #9ed1d5;
+  font-size: 35px;
+  margin-bottom: 20px;
+}
+
+.wedding_site h5 {
+  font-weight: bold;
+}
+
+
+.wedding_site .text-group {
+  margin: 40px 0 40px 0;
+}
+
+.wedding_site .nav-pills, .wedding_site .mini-nav  {
+  font-family: 'Open Sans Condensed', sans-serif;
+  text-transform: uppercase;
+  font-size: 20px;
+  margin-bottom: 20px;
+}
+.wedding_site .nav-pills > li.active > a, .wedding_site .nav-pills > li.active > a:focus, .wedding_site .nav-pills > li.active > a:hover {
+  background-color: transparent;
+  color: #9ed1d5;
+  outline: none;
+}
+
+.wedding_site .tab-content {
+  margin-bottom: 30px;
+}
+.wedding_site .tab-content a{
+  font-weight: 700;
+  border-bottom: 1px solid #9ed1d5;
+}
+.wedding_site a:hover{
+  color: #9ed1d5;
+  -moz-transition: all 0.3s;
+  -o-transition: all 0.3s;
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
+}
+.wedding_site .nav>li>a:focus, .wedding_site .nav>li>a:hover {
+  color: #9ed1d5;
+  background-color: transparent;
+}
+
+.wedding_site .mini-nav a {
+  /*color: #FFBFBC;*/
+  color: #FF9E99;
+  border-bottom: none;
+  font-size: 14px;
+  font-weight: normal;
+}
+.wedding_site .mini-nav a:hover {
+  color: #FFDE99;
+}
+
+.wedding_site .tab-content {
+  text-align: center;
+}
+
+.wedding_site .included-activities {
+  text-align: left;
+}
+.wedding_site .included-activities li {
+  list-style-type: disc;
+
+}
+
+.wedding_site .glyphicon {
+  color: #FFBFBC;
+  text-align: center;
+  margin: 10px 0 20px 0;
+}
+
+#flights li {
+  text-align: left;
+  list-style-type: disc;
+}
+
+#flights #tips {
+  text-align: left;
+margin: 20px 0;
+}
+
+#rsvp-form {
+  text-align: left;
+}
+
+#rsvp-form .checkbox-inline+.checkbox-inline, .radio-inline+.radio-inline {
+  margin-left: 60px;
+}
+
+#radios-group {
+  margin:30px -15px;
+}
+
+.guest, .guest hr {
+  margin-top: 50px;
+}
+
+.wedding_site .form-control:focus {
+  border-color: #FFBFBC;
+  -webkit-box-shadow: inset 0 1px 1px rgba(0,0,0,.075),0 0 8px rgba(255,191,188,.6);
+  box-shadow: inset 0 1px 1px rgba(0,0,0,.075),0 0 8px rgba(255,191,188,.6);
+}

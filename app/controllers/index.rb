@@ -80,3 +80,25 @@ get '/portfolio/image/:id' do
   @body_class = 'image_page'
   erb :image
 end
+
+
+get '/mathiasaschulien' do
+  @body_class = 'wedding_site'
+  erb :mathiasaschulien
+end
+
+post '/mathiasaschulien/rsvp' do
+  res = {response: []}
+  party = WeddingParty.create(email: params[:wedding_party][:email])
+  params[:wedding_guests].each_value do |wedding_guest|
+    guest = party.guests.create(wedding_guest)
+
+    if guest.errors.messages.any?
+      res[:response] << guest.errors.messages.values.flatten.first
+    end
+  end
+
+  res[:response] << 'Thanks!' if res[:response].empty?
+
+  halt 200, res.to_json
+end

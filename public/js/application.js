@@ -19,6 +19,12 @@ $(document).ready(function() {
     .appendTo('#slideshow');
   },  6000);
 
+
+  // if wedding site
+  if($('.wedding_site').length != 0){
+    weddingController = new WeddingController
+    weddingController.initialize();
+  }
 });
 
 
@@ -58,5 +64,68 @@ PortfolioController.prototype = {
     $(".imageContainer").css("display", "block");
     $("#singleImage").attr("src", imgSrc)
     $("#singleImage").attr("alt", imgID)
+  }
+}
+
+
+
+function WeddingController(){}
+
+WeddingController.prototype = {
+  initialize: function(){
+    $('.nav a').click(function (e) {
+      e.preventDefault()
+      $(this).tab('show')
+    });
+
+    $('#party_count').on('change', this.loadGuests)
+
+    $('#rsvp-form').on('submit', this.submitRsvp)
+
+  },
+  loadGuests: function(){
+    var partyCount = $(this).val() - 1
+    $('#guests').hide()
+    $('#rsvp-submit').hide()
+    $('.guest').not('#guest_0').remove()
+
+    for (var i = 0; i <= partyCount; i++) {
+      if (i === 0) { continue; }
+
+      var guest = $( ".guest" ).first().clone()
+      $(guest).attr('id', 'guest_' + i)
+
+      $(guest).find('input[name*="0"]').each(function() {
+        $(this).attr('name', $(this).attr('name').replace(/\d+/, i))
+      });
+      $(guest).find('label[for*="0"]').each(function() {
+        $(this).attr('for', $(this).attr('for').replace(/\d+/, i))
+      });
+
+      $('#guests').append(guest)
+    };
+
+    $('#guests').removeClass('hidden')
+    $('#rsvp-submit').removeClass('hidden')
+    $('#guests').show()
+    $('#rsvp-submit').show()
+  },
+  submitRsvp: function(){
+    event.preventDefault();
+    $.ajax({
+      type: 'POST',
+      url: $(this).attr('action'),
+      data: $(this).serialize()
+    })
+    .done(function(data) {
+      $('#rsvp h4').remove()
+      $('form').hide()
+      $($.parseJSON(data).response).each(function(){
+        $('#rsvp').append('<h4>'+ this +'</h4>')
+      })
+    }).fail(function(){
+      $('#rsvp h4').remove()
+      $('#rsvp').append('<h4>An error occurred. Please email me at acreilly3@gmail.com.</h4>')
+    })
   }
 }
