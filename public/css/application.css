@@ -701,6 +701,9 @@ footer {
   font-weight: bold;
 }
 
+#registry a {
+  border-bottom: none;
+}
 
 .wedding_site .text-group {
   margin: 40px 0 40px 0;
