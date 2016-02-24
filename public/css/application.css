@@ -2,9 +2,7 @@ body {
   font-family: "Raleway", sans-serif;
   background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, rgba(255, 255, 255, 0.65)), color-stop(100%, rgba(255, 255, 255, 0.65))), url(/img/white_wall.png) repeat 0 0;
 }
-.my-map {
-  margin: 0 auto;
-}
+
 header {
   /*width: 100%;*/
   /*height: 100px;*/
@@ -655,6 +653,19 @@ footer {
 
 
 /*wedding*/
+
+.my-map {
+  margin: 0 auto;
+}
+#my-map-canvas .map-generator {
+  max-width: 100%;
+  max-height: 100%;
+  background: none;
+}
+
+.invitation {
+  height: 100vh;
+}
 
 .wedding_site {
   /*font-family: Helvetica, sans-serif;*/
