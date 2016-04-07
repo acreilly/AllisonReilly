@@ -9,8 +9,8 @@
         <% else %>
         <h2><%= @image.title %></h2>
         <% end %>
-        <% if @image.dates != nil %>
-        <p style="text-align: center;"><i><%= @image.dates %></i></p>
+        <% if @image.date_created != nil %>
+        <p style="text-align: center;"><i><%= @image.date_created %></i></p>
         <% end %>
         <% if @image.description != nil %>
         <p><b>Description:</b> <%= @image.description %></p>
