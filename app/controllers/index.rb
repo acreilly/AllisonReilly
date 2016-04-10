@@ -87,6 +87,11 @@ get '/mathiasaschulien' do
   erb :mathiasaschulien
 end
 
+get '/MathiasASchulien' do
+  @body_class = 'wedding_site'
+  erb :mathiasaschulien
+end
+
 post '/mathiasaschulien/rsvp' do
   res = {response: []}
   party = WeddingParty.create(email: params[:wedding_party][:email])
